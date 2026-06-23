@@ -1,0 +1,6 @@
+{
+  "name": "The Outlast Trials Guide",
+  "description": "Interactive dashboard for Outlast Trials Maps, Trials, and MK-Challenges with maps, objectives, tactical strategies, and enemy dossier.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

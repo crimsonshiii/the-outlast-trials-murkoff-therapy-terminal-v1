@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=JetBrains+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", "Space Mono", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Share Tech Mono", "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* Custom Phosphor Green Terminals & Scanlines */
+.crt-screen {
+  background-color: #011302;
+  background-image: linear-gradient(rgba(18, 30, 18, 0) 50%, rgba(0, 0, 0, 0.45) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  background-size: 100% 4px, 6px 100%;
+}
+
+.crt-glow {
+  text-shadow: 0 0 4px rgba(57, 255, 20, 0.5), 0 0 10px rgba(57, 255, 20, 0.3);
+}
+
+.crt-border {
+  border: 1px solid #1a3c22;
+  box-shadow: inset 0 0 15px rgba(57, 255, 20, 0.15), 0 0 10px rgba(57, 255, 20, 0.1);
+}
+
+.classified-stamp {
+  transform: rotate(-8deg);
+  border: 3px double #d32f2f;
+  color: #d32f2f;
+  text-shadow: 0 0 4px rgba(211, 47, 47, 0.4);
+}
+
+/* Beautiful retro dark green scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #040d06;
+}
+::-webkit-scrollbar-thumb {
+  background: #15381f;
+  border-radius: 4px;
+  border: 1px solid #23522f;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #23522f;
+}
+
+@keyframes flicker {
+  0% { opacity: 0.96; }
+  50% { opacity: 1.0; }
+  100% { opacity: 0.98; }
+}
+
+.vintage-flicker {
+  animation: flicker 0.15s infinite;
+}
+
+@keyframes scanline-move {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100%; }
+}
+
+/* Grid matrix cell style mimicking the attached image */
+.murkoff-grid-cell {
+  background-color: #011504;
+  border: 1px solid #005a11;
+  color: #1aff43;
+}
+
+.murkoff-grid-cell-highlight {
+  background-color: #032d0b;
+  border: 1px solid #00aa22;
+  color: #ffffff;
+  text-shadow: 0 0 8px #00ff33;
+}
