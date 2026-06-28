@@ -234,19 +234,20 @@ export const MAPS_DATA = [
       {
         name: "Grind the Bad Apples",
         type: "Trial",
-        description: "A fun-filled execution theme park. Reagents must push bad children mannequins into a massive grinder.",
+        description: "You are an adult. The youth will not obey our orders and must be corrected. There are children murdering adults in the Root Canal. Punish the children, and we will let you out.",
         difficulty: 2,
         objectives: [
-          "Gain access to the Kiddie Land grounds",
-          "Search the ticket booths for electrical breaker keys",
-          "Locate the three missing amusement park generator gears",
-          "Align mechanical gears to restart the main coaster track",
-          "Push the roller coaster cart packed with 'bad children' up the lift hill",
-          "Deliver the cart contents to the giant crushing grinder",
-          "Leap of faith down the service hatch to escape"
+          "Infiltrate the Fun Park",
+          "Reach the Root Canal Ride",
+          "Get access to the Root Canal Ride",
+          "Regroup into the Root Canal",
+          "Push the Boat",
+          "Power off the Barriers",
+          "Raise the Water Level",
+          "Push the Boat (Again)"
         ],
-        enemies: ["Mother Gooseberry", "Berserker", "Pouncer", "Screamer"],
-        tactics: "The park has many open spaces but a lot of dark pathways. Check ticket booths for healing items. Mother Gooseberry patrols the central plaza continuously."
+        enemies: ["Mother Gooseberry"],
+        tactics: "Acquire ride tickets by completing carnival games using throwable hearts, then gain access to the Root Canal to slowly push the dental-themed boat. Disconnect hidden power modules to bypass toothbrush barriers and follow color-coded pipes to turn correct valves, raising the water level to grind the bad children and escape."
       },
       {
         name: "Punish the Miscreants",
