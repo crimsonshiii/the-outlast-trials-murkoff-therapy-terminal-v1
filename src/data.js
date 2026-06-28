@@ -172,7 +172,7 @@ export const MAPS_DATA = [
           "Serve the Body of Christ",
           "Regroup in the Chapel"
         ],
-        enemies: ["Mother Gooseberry", "Night Hunter", "Screamer", "Big Grunt"],
+        enemies: ["Mother Gooseberry"],
         tactics: "Tune the dorms' radio frequency boxes and swap classroom film reels while avoiding Mother Gooseberry and timed gates. Search the cemetery for saw keys to slice Bootleg Jesus' legs, then refuel basement generators to trigger the blood deluge and escape."
       },
       {
@@ -185,7 +185,7 @@ export const MAPS_DATA = [
           "Finish the soup of the day",
           "Serve the Soup in the Cafeteria"
         ],
-        enemies: ["Mother Gooseberry", "Pouncer"],
+        enemies: ["Mother Gooseberry"],
         tactics: "Search the Services and Church areas to locate four additional bleach bottles, carrying them back to poison the kitchen soup while evading guarding Ex-Pop like the Night Hunter and Big Grunt. Once all bottles are poured and the poisoned feast is served, immediately head for the exit shuttle to escape Mother Gooseberry's aggressive retaliation."
       },
       {
@@ -197,7 +197,7 @@ export const MAPS_DATA = [
           "Adjust the Frequencies to Unlock the Lobby Gate",
           "Open the Lobby gate"
         ],
-        enemies: ["Big Grunt", "Mother Gooseberry", "Screamer"],
+        enemies: ["Mother Gooseberry"],
         tactics: "Locate and tune five frequency boxes hidden across the orphanage's rooms and outdoor areas while avoiding Mother Gooseberry and various Ex-Pop. After tuning all boxes, return to the lobby to open the gate via the button switch and escape through the exit shuttle before Gooseberry intercepts you."
       },
       {
@@ -208,7 +208,7 @@ export const MAPS_DATA = [
         objectives: [
           "Gather the Children of God"
         ],
-        enemies: ["Mother Gooseberry", "Night Hunter"],
+        enemies: ["Mother Gooseberry"],
         tactics: "Track down button switches to disconnect child mannequins throughout the dorms and deliver their upper halves to the church's van while avoiding Mother Gooseberry and a Big Grunt patrolling the exterior. Move quietly to prevent triggering sound detector gates that seal off pathways, then escape through the exit shuttle once all deliveries are complete."
       },
       {
@@ -219,7 +219,7 @@ export const MAPS_DATA = [
         objectives: [
           "Reunite the Family"
         ],
-        enemies: ["Mother Gooseberry", "Big Grunt"],
+        enemies: ["Mother Gooseberry"],
         tactics: "Retrieve the gas canister to power the kitchen generator, opening the cafeteria while tinkering with electric panels in the chapel basement and laundry to unseal the lobby gate electronic locks. Evade Mother Gooseberry to locate the cafeteria keys, reuniting the child mannequin with its parents in the grinder before escaping via the exit shuttle."
       }
     ]
