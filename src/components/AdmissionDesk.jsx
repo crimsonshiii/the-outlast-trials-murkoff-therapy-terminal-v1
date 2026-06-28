@@ -39,11 +39,11 @@ export default function AdmissionDesk({
     <Box
       className={`crt-screen ${nightVision ? "vintage-flicker" : ""}`}
       sx={{
-        minHeight: "150vh",
+        minHeight: "100vh",
         pb: 10,
         color: "text.primary",
         position: "relative",
-        overflow: "hidden",
+        overflowX: "hidden",
         backgroundColor: "background.default",
       }}
     >
@@ -186,7 +186,7 @@ export default function AdmissionDesk({
                   variant="outlined"
                   value={formEmail}
                   onChange={(e) => setFormEmail(e.target.value)}
-                  placeholder="e.g., reagent@murkoffcorp.com"
+                  placeholder="e.g., reagent@murkoff.com"
                   required
                   sx={{
                     "& .MuiInputLabel-root": {

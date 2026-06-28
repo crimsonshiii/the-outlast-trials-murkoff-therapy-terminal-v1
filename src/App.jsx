@@ -177,9 +177,9 @@ export default function App() {
       handleError();
       return;
     }
-    // Strict @murkoff.com domain restriction - relaxed to allow other credential domains for testing and general community access
-    if (!formEmail.trim().toLowerCase().includes("@") && !formEmail.trim().toLowerCase().endsWith("@murkoff.com")) {
-      setFormError("ACCESS RESTRICTED: INVALID SECURITY CREDENTIALS. ONLY AUTHORIZED REAGENT EMAIL ADDRESSES GRANTED ACCESS.");
+    // Strict @murkoff.com domain restriction
+    if (!formEmail.trim().toLowerCase().endsWith("@murkoff.com")) {
+      setFormError("ACCESS RESTRICTED: INVALID SECURITY CREDENTIALS. ONLY AUTHORIZED @MURKOFF.COM EMAIL ADDRESSES GRANTED ACCESS.");
       handleError();
       return;
     }
@@ -610,7 +610,7 @@ function ClinicalDashboard({
         pb: 10,
         color: "text.primary",
         position: "relative",
-        overflow: "hidden",
+        overflowX: "hidden",
       }}
     >
       <Box
