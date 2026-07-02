@@ -16,6 +16,26 @@ import {
 import { Target, Skull, FileText, HelpCircle } from "lucide-react";
 import { MAPS_DATA } from "../data";
 
+const isMainTrial = (name) => {
+  if (!name) return false;
+  const n = name.trim().toLowerCase();
+  return (
+    n === "kill the snitch" ||
+    n === "cleanse the orphans" ||
+    n === "grind the bad apples" ||
+    n === "vindicate the guilty" ||
+    n === "pervert the futterman" ||
+    n === "poison the medicine" ||
+    n === "pleasure the prosecutor" ||
+    n === "liquidate the union" ||
+    n === "kill the politician" ||
+    n === "kill the politiician" ||
+    n === "despoil the auction" ||
+    n === "silence the idol" ||
+    n === "tba"
+  );
+};
+
 export default function TrialProtocol({
   selectedActivity,
   selectedMapId,
@@ -134,7 +154,7 @@ export default function TrialProtocol({
           sx={{
             fontWeight: "bold",
             textTransform: "uppercase",
-            color: "#ffffff",
+            color: isMainTrial(selectedActivity.name) ? "#ff9800" : "#ffffff",
             lineHeight: 1.2,
             mt: 0.5,
           }}

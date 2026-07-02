@@ -3,6 +3,26 @@ import { Box, Typography, Paper, Chip, Button } from "@mui/material";
 import { Search } from "lucide-react";
 import { MAPS_DATA } from "../data";
 
+const isMainTrial = (name) => {
+  if (!name) return false;
+  const n = name.trim().toLowerCase();
+  return (
+    n === "kill the snitch" ||
+    n === "cleanse the orphans" ||
+    n === "grind the bad apples" ||
+    n === "vindicate the guilty" ||
+    n === "pervert the futterman" ||
+    n === "poison the medicine" ||
+    n === "pleasure the prosecutor" ||
+    n === "liquidate the union" ||
+    n === "kill the politician" ||
+    n === "kill the politiician" ||
+    n === "despoil the auction" ||
+    n === "silence the idol" ||
+    n === "tba"
+  );
+};
+
 export default function TrialSelection({
   searchQuery,
   setSearchQuery,
@@ -195,6 +215,7 @@ export default function TrialSelection({
                       {map.activities.map((act, index) => {
                         const isSelected = selectedActivity?.name === act.name;
                         const matchesFilter = matchedActs.some((ma) => ma.name === act.name);
+                        const isMain = isMainTrial(act.name);
 
                         return (
                           <React.Fragment key={act.name}>
@@ -202,13 +223,21 @@ export default function TrialSelection({
                               onClick={() => handleSelectActivity(act, map.id)}
                               style={{
                                 cursor: "pointer",
-                                color: isSelected ? "#ffffff" : matchesFilter ? "#1aff43" : "#005e13",
+                                color: isSelected 
+                                  ? (isMain ? "#ffe0b2" : "#ffffff") 
+                                  : matchesFilter 
+                                    ? (isMain ? "#ff9800" : "#1aff43") 
+                                    : (isMain ? "#803c00" : "#005e13"),
                                 fontWeight: isSelected ? "bold" : "normal",
                                 textDecoration: isSelected ? "underline" : "none",
                                 padding: "1px 6px",
                                 borderRadius: "2px",
-                                backgroundColor: isSelected ? "rgba(26, 255, 67, 0.2)" : "transparent",
-                                border: isSelected ? "1px solid #1aff43" : "1px solid transparent",
+                                backgroundColor: isSelected 
+                                  ? (isMain ? "rgba(255, 152, 0, 0.15)" : "rgba(26, 255, 67, 0.2)") 
+                                  : "transparent",
+                                border: isSelected 
+                                  ? (isMain ? "1px solid #ff9800" : "1px solid #1aff43") 
+                                  : "1px solid transparent",
                                 transition: "all 0.15s ease",
                                 opacity: matchesFilter ? 1 : 0.4,
                                 fontSize: isSelected ? "0.95rem" : "0.85rem",
@@ -219,7 +248,7 @@ export default function TrialSelection({
                               {act.name}
                             </span>
                             {index < map.activities.length - 1 && (
-                              <span style={{ color: "#1aff43", opacity: 0.35 }}> • </span>
+                              <span style={{ color: isMain ? "#ff9800" : "#1aff43", opacity: 0.35 }}> • </span>
                             )}
                           </React.Fragment>
                         );
@@ -300,6 +329,7 @@ export default function TrialSelection({
                 {map.activities.map((act) => {
                   const isSelected = selectedActivity?.name === act.name;
                   const matchesFilter = matchedActs.some((ma) => ma.name === act.name);
+                  const isMain = isMainTrial(act.name);
 
                   return (
                     <Box
@@ -308,8 +338,12 @@ export default function TrialSelection({
                       sx={{
                         cursor: "pointer",
                         p: 1.25,
-                        border: isSelected ? "1px solid #1aff43" : "1px solid rgba(0, 90, 17, 0.25)",
-                        backgroundColor: isSelected ? "rgba(26, 255, 67, 0.12)" : "rgba(2, 15, 4, 0.5)",
+                        border: isSelected 
+                          ? (isMain ? "1px solid #ff9800" : "1px solid #1aff43") 
+                          : (isMain ? "1px solid rgba(255, 152, 0, 0.25)" : "1px solid rgba(0, 90, 17, 0.25)"),
+                        backgroundColor: isSelected 
+                          ? (isMain ? "rgba(255, 152, 0, 0.12)" : "rgba(26, 255, 67, 0.12)") 
+                          : "rgba(2, 15, 4, 0.5)",
                         borderRadius: "1px",
                         opacity: matchesFilter ? 1 : 0.4,
                         transition: "all 0.15s ease",
@@ -320,7 +354,9 @@ export default function TrialSelection({
                         variant="body2"
                         sx={{
                           fontWeight: isSelected ? "bold" : "normal",
-                          color: isSelected ? "#ffffff" : "#1aff43",
+                          color: isSelected 
+                            ? (isMain ? "#ffe0b2" : "#ffffff") 
+                            : (isMain ? "#ff9800" : "#1aff43"),
                           fontFamily: '"Share Tech Mono", monospace',
                           fontSize: "0.82rem",
                         }}
