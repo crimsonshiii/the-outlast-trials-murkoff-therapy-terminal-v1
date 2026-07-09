@@ -146,7 +146,7 @@ export default function AdmissionDesk({
                 Murkoff Admission Desk
               </Typography>
               <Typography variant="caption" sx={{ opacity: 0.6, fontSize: "0.7rem", display: "block" }}>
-                SYSTEM_MAINFRAME_INGRESS_GATE // REAGENT PROFILE INTAKE V0.1.0
+                SYSTEM_MAINFRAME_INGRESS_GATE // REAGENT PROFILE INTAKE V0.1.1
               </Typography>
             </Box>
           </Box>
@@ -276,52 +276,61 @@ export default function AdmissionDesk({
                 />
               </Grid>
 
-              <Grid item xs={12}>
-                <Box sx={{ display: "flex", gap: 1 }}>
-                  <TextField
-                    fullWidth
-                    label="SUBJECT NUMBER"
-                    variant="outlined"
-                    value={formSubjectNumber}
-                    onChange={(e) => setFormSubjectNumber(e.target.value)}
-                    placeholder="e.g., SN-43659-X"
-                    required
-                    sx={{
-                      "& .MuiInputLabel-root": {
-                        color: "rgba(0, 255, 66, 0.6)",
-                        fontFamily: "inherit",
-                        fontSize: "0.85rem",
-                        "&.Mui-focused": {
-                          color: "primary.main",
-                        },
+              <Grid item xs={12} sm={6}>
+                <TextField
+                  fullWidth
+                  label="SUBJECT NUMBER"
+                  variant="outlined"
+                  value={formSubjectNumber}
+                  onChange={(e) => setFormSubjectNumber(e.target.value)}
+                  placeholder="e.g., SN-43659-X"
+                  required
+                  sx={{
+                    "& .MuiInputLabel-root": {
+                      color: "rgba(0, 255, 66, 0.6)",
+                      fontFamily: "inherit",
+                      fontSize: "0.85rem",
+                      "&.Mui-focused": {
+                        color: "primary.main",
                       },
-                      "& .MuiInputBase-input": {
-                        color: "#ffffff",
-                        fontFamily: "inherit",
-                      },
-                      "& .MuiOutlinedInput-root": {
-                        borderRadius: 0,
-                        "& fieldset": { borderColor: "rgba(0, 255, 66, 0.3)" },
-                        "&:hover fieldset": { borderColor: "primary.main" },
-                        "&.Mui-focused fieldset": { borderColor: "primary.main" },
-                      },
-                    }}
-                  />
-                  <Button
-                    variant="outlined"
-                    color="primary"
-                    onClick={handleGenerateSubjectNumber}
-                    sx={{
+                    },
+                    "& .MuiInputBase-input": {
+                      color: "#ffffff",
+                      fontFamily: "inherit",
+                    },
+                    "& .MuiOutlinedInput-root": {
                       borderRadius: 0,
-                      whiteSpace: "nowrap",
-                      fontSize: "0.75rem",
-                      fontWeight: "bold",
-                      px: 2,
-                    }}
-                  >
-                    GENERATE ID
-                  </Button>
-                </Box>
+                      "& fieldset": { borderColor: "rgba(0, 255, 66, 0.3)" },
+                      "&:hover fieldset": { borderColor: "primary.main" },
+                      "&.Mui-focused fieldset": { borderColor: "primary.main" },
+                    },
+                  }}
+                />
+              </Grid>
+
+              <Grid item xs={12} sm={6}>
+                <Button
+                  fullWidth
+                  variant="outlined"
+                  color="primary"
+                  onClick={handleGenerateSubjectNumber}
+                  sx={{
+                    height: "56px",
+                    borderRadius: 0,
+                    whiteSpace: "nowrap",
+                    fontSize: "0.85rem",
+                    fontWeight: "bold",
+                    px: 2,
+                    borderColor: "rgba(0, 255, 66, 0.3)",
+                    fontFamily: "inherit",
+                    "&:hover": {
+                      borderColor: "primary.main",
+                      backgroundColor: "rgba(0, 255, 66, 0.05)",
+                    }
+                  }}
+                >
+                  GENERATE ID
+                </Button>
               </Grid>
 
               <Grid item xs={12}>
