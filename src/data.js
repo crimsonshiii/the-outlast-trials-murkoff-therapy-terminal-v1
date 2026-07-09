@@ -152,7 +152,7 @@ export const MAPS_DATA = [
   {
     id: "orphanage",
     name: "Orphanage",
-    description: "Mother Gooseberry will teach you how to be a good boy or girl. A crumbling school of religion and child rearing.",
+    description: "Everyone deserves a second chance. Some of us even deserve a first. The Orphanage is a sanctuary and gentling box for the abandoned and unwanted. Come inside and find yourself a whole new family.",
     activities: [
       {
         name: "Cleanse the Orphans",
@@ -229,7 +229,7 @@ export const MAPS_DATA = [
   {
     id: "fun_park",
     name: "Fun Park",
-    description: "Welcome to Kiddie Land! A colorful, twisted carnival where physical pain and structural comedy go hand in hand.",
+    description: "Is there anything better than a day at the carnival? Cotton candy, skee-ball, grinning clowns, and the laughter and screams of children. Anything can happen at the Fun Park, so keep your eyes on your kids, or someone else might.",
     activities: [
       {
         name: "Grind the Bad Apples",
@@ -252,101 +252,80 @@ export const MAPS_DATA = [
       {
         name: "Punish the Miscreants",
         type: "MK-Challenge",
-        description: "Teach teenagers a physical lesson by destroying their secret stash of contraband toys.",
+        description: "You have to make an example. If you punish a few children firmly enough, you teach all the children the lesson. Punish the children, and we will let you out.",
         difficulty: 3,
         objectives: [
-          "Collect chemical boxes around the water slides",
-          "Use acid solutions to melt prohibited prize toys",
-          "Deconstruct water pump safety systems",
-          "Flee through the maintenance drain pipes"
+          "Find and Grind the Bad Children"
         ],
-        enemies: ["Mother Gooseberry", "Big Grunt"],
-        tactics: "Melt bins are in highly visible, open spots. Hide inside the water slides or under structures if Mother Gooseberry starts patrolling your sector."
+        enemies: ["Mother Gooseberry"],
+        tactics: "Inside the Barn, locate the grinder, then follow color-coded wires to find and press the button switches that disable the four child mannequins hidden across the Barn's Attic, Castle, Diner, and Carousel areas. Once all mannequin upper halves are ripped off and disposed of in the grinder, evade Mother Gooseberry's ambush and escape via the exit shuttle."
       },
       {
         name: "Open the Gates",
         type: "MK-Challenge",
-        description: "Bypass park gates so that more test subjects can participate.",
+        description: "You are the warden of all your own prisons, your containment requires your will. Disconnect the power, open the doors, and let yourself go.",
         difficulty: 2,
         objectives: [
-          "Find three main gate power boxes",
-          "Perform hotwire operations by connecting correct colored wires",
-          "Dodge electrical shock traps of Coyle who is vacationing here",
-          "Operate manual gates lever and exit"
+          "Open the Gates to Reach the Exit"
         ],
-        enemies: ["Leland Coyle", "Night Hunter"],
-        tactics: "Wire connection mini-game flashes patterns. Connecting the wrong wire causes a massive shock, alerting Coyle and damaging health."
+        enemies: ["Mother Gooseberry"],
+        tactics: "To open the four rolling gates blocking your exit, follow the glowing power wires to locate and disconnect three battery modules in each color-coded area. Navigate the Barn's Attic, Castle, Diner, and Carousel areas in sequence while evading Mother Gooseberry and her assisting Ex-Pops, then escape via the final Shuttle."
       },
       {
         name: "Drill the Futterman",
         type: "MK-Challenge",
-        description: "Use the industrial drills to dismantle the park's iconic mascot costume.",
+        description: "You are a consumer, you are not the product. If you allow them to turn us into toys, then you deserve to be played with. Destroy the human toy, and we will let you out.",
         difficulty: 2,
         objectives: [
-          "Power up the heavy drilling platform",
-          "Search for mechanical drill bits in secret utility toolboxes",
-          "Insert bits and perform high-pressure drilling drills on the mascot structure",
-          "Relocate to escape zone"
+          "Kill Mr. Futterman in Gooseberry's Office"
         ],
-        enemies: ["Mother Gooseberry", "Berserker", "Screamer"],
-        tactics: "The drilling creates incredible vibration and sound. Screamers nearby will immediately trigger. Clear out Screamers *before* starting the drills."
+        enemies: ["Mother Gooseberry"],
+        tactics: "Throw hearts at Futterman targets in Canal A and B to disable blocking flamethrowers and gain access to the backrooms. Once inside, bypass patrolling Ex-Pops and a Night Hunter to reach the Office, press the button switch to execute Bootleg Futterman, then escape Mother Gooseberry's ambush."
       },
       {
         name: "Deface the Futtermans",
         type: "MK-Challenge",
-        description: "Shatter the giant fiberglass figures representing Gooseberry's parents.",
+        description: "You are not your childhood. Memory is the grotesque narcissism of individuality and reason. Nostalgia. Nostalgia is the testament that will strengthen the flock. Abandon your youth. Deface and demean the infantile puppets that control you, and we will let you out.",
         difficulty: 3,
         objectives: [
-          "Acquire sledgehammers from the tool workshop",
-          "Locate 4 Futterman giant status statues in the amusement area",
-          "Smash statues to dust",
-          "Evacuate through loading bays"
+          "Reach the Exit"
         ],
-        enemies: ["Mother Gooseberry", "Pouncer"],
-        tactics: "Sledgehammers are heavy two-handed items. When carrying them, you cannot use items or crouch inside small spaces. Drop the hammer to defend/flee if needed."
+        enemies: ["Mother Gooseberry"],
+        tactics: "Navigate through the Carousel, Diner, and Castle areas by throwing hearts at moving Futterman targets to unlock consecutive gates while managing your heart inventory. Upon entering the Barn, quickly grab hearts and hit the final three targets in the attic within 180 seconds to reopen the exit and escape Mother Gooseberry."
       },
       {
         name: "Redeem your Freedom",
         type: "MK-Challenge",
-        description: "Turn in outstanding prize tickets in exchange for experimental serum injectors.",
+        description: "You are the consumer, whose life's value is revealed by the worthless currency that sustains it. Collect the tickets, turn them in, and we will let you out.",
         difficulty: 2,
         objectives: [
-          "Play carnival shooting mini-games under fire",
-          "Accumulate 100 prize tickets",
-          "Exchanging tickets at the main gift shop counter",
-          "Run to the shuttle before gas fills the arena"
+          "Redeem your Freedom"
         ],
-        enemies: ["Big Grunt", "Night Hunter"],
-        tactics: "Carnival games require throwing bricks or bottles at targets. Keep throwing objects in your inventory. Watch out for Grunts patrolling the targets."
+        enemies: ["Mother Gooseberry"],
+        tactics: "Collect ten tickets from dispensers spread across the lower canals and upper offices while managing your limited four-ticket carrying capacity. Make multiple runs to redeem them at the ticket booth in Mother Gooseberry's office while evading her and the hostile Ex-Pops before escaping through the shuttle."
       },
       {
         name: "Beguile the Children",
         type: "MK-Challenge",
-        description: "Spray hallucinogenic mist into orphan dorm ventilations.",
+        description: "You are the mesmerist, gently murmuring behind the pendulum, guiding the sleepwalking children into the grinder we call propriety. Change the channel, switch the program, and we will let you out.",
         difficulty: 3,
         objectives: [
-          "Locate canisters in the supply closet",
-          "Hook them up to the park ventilation ducts",
-          "Crank the manual pressure valves to spread the mist",
-          "Flee through the ticket gates"
+          "Find the codes to modify the messages"
         ],
-        enemies: ["Mother Gooseberry", "Night Hunter"],
-        tactics: "Valves are spread far apart; clearing tasks requires turning them simultaneously in co-op. In solo, time is limited, so plan a quick circular route!"
+        enemies: ["Mother Gooseberry"],
+        tactics: "Explore the Illusion Castle to locate three projectors and insert the correct film reels, deciphering a code sequence while evading Mother Gooseberry and roaming Ex-Pops. Memorize this sequence to solve the puzzle boxes in the Space Rocket's auditorium, then activate the button switch to alter the TV program and escape."
       },
       {
         name: "Win the Truth",
         type: "MK-Challenge",
-        description: "Overpower park announcers to broadcast the truth about Murkoff.",
+        description: "You are the blind observer, who consumes screen-fed ignorance and swells with the genius of idiot artifice. Regurgitate the knowledge that brings suffering to the wise, win the game which only punishes the defeated, and we will let you out.",
         difficulty: 2,
         objectives: [
-          "Bypass the secure broadcaster DJ office",
-          "Cut power cables feeding the signal jamming towers",
-          "Insert raw transmission drive",
-          "Survive the 2-minute siege in the DJ lobby",
-          "Escape via the emergency monorail"
+          "Complete the First Round",
+          "Survive the Game Show"
         ],
-        enemies: ["Mother Gooseberry", "Leland Coyle", "Berserker"],
-        tactics: "Both Prime Assets (Coyle and Gooseberry) are present in this extreme challenge! Focus heavily on stun/blind rigs and keep moving. Never camp in one room too long."
+        enemies: ["Mother Gooseberry"],
+        tactics: "Search the designated rooms across the Illusion Castle to find the correct symbols, calculate the mathematical solutions displayed on the screens, and input the digits into the puzzle boxes at the Hourglass. Press the confirmation button to complete each round while evading Mother Gooseberry, ensuring accuracy to avoid receiving fatal electrical shocks."
       }
     ]
   },
