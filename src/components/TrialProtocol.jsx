@@ -32,7 +32,7 @@ const isMainTrial = (name) => {
     n === "kill the politiician" ||
     n === "despoil the auction" ||
     n === "silence the idol" ||
-    n === "tba"
+    n === "locksock the warden"
   );
 };
 
@@ -79,7 +79,7 @@ export default function TrialProtocol({
     const id = (selectedMapId || "").toLowerCase();
     const name = mapName.toLowerCase();
 
-    if (id === "police_station" || id === "courthouse" || name.includes("police") || name.includes("court")) {
+    if (id === "police_station" || id === "courthouse" || id === "prison_farm" || name.includes("police") || name.includes("court") || name.includes("prison")) {
       return "SHOCK GRIDS";
     }
     if (id === "orphanage" || id === "fun_park" || id === "toy_factory" || name.includes("orphan") || name.includes("fun park") || name.includes("toy")) {

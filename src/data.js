@@ -334,197 +334,189 @@ export const MAPS_DATA = [
   {
     id: "courthouse",
     name: "Courthouse",
-    description: "Innocent until proven guilty, but you are already guilty! A gothic temple of corrupt laws where judges wield axes.",
+    description: "The Courthouse stands as a monolith of justice, where life and death are a matter of persuasion and expense. Surrender yourself to a higher power and beg for the mercy of the court.",
     activities: [
       {
         name: "Vindicate the Guilty",
         type: "Trial",
-        description: "The scales of justice must balance. Reagents must destroy legal files and sentence the betrayers to death.",
-        difficulty: 4,
+        description: "You are justice. You are loyal. We cannot allow the tyranny of facts and impartial reason to condemn the people who protect and guide you. The past is changeable, the future is set. Sabotage the court, kill the judge, and we will let you out.",
+        difficulty: 2,
         objectives: [
-          "Search courtroom records for corrupt judges' dossiers",
-          "Retrieve heavy brass balancing weights from the archives",
-          "Place weights on the scales of justice in central courthouse",
-          "Carry judicial documents to the incinerator grids",
-          "Locate key codes to open the judge's quarters",
-          "Sentence the judge by operating the trapdoor lever",
-          "Escape the courthouse through security blockades"
+          "Infiltrate the Courthouse",
+          "Reach the Courtroom",
+          "Unlock the Evidence",
+          "Drop the Evidence in the Fountain",
+          "Gather Acid and pour into the Fountain",
+          "Destroy the Remaining Evidence",
+          "Return to the Courtroom",
+          "Kill the Witness",
+          "Kill the Remaining Witnesses",
+          "Return to the Courtroom (Again)",
+          "Execute the Judge"
         ],
-        enemies: ["Leland Coyle", "Judge (Slasher)", "Night Hunter", "Screamer"],
-        tactics: "The courthouse contains multiple levels with overlapping balconies. Leland Coyle acts as a high judge, dropping down from higher balconies when you trigger sound traps."
+        enemies: ["Leland Coyle"],
+        tactics: "Decipher blacklight puzzle codes to retrieve evidence heads and carefully transport acid buckets to dissolve the proof in the courtyard fountain while evading Leland Coyle. Then, hunt and execute the remaining Scapegoat witnesses using Microwave Triggers before restoring power to crank the backstage execution machine and hang the Judge and make your way to exit through the trial shuttle."
       },
       {
         name: "Escape the Courthouse",
         type: "MK-Challenge",
-        description: "Police blockade is closing in. Find a way out of the sealed basements.",
-        difficulty: 3,
+        description: "You are special. You are deserving. Civilization is founded on the suffering of the weak. Kill the scapegoats to open the gates, and we will let you out.",
+        difficulty: 2,
         objectives: [
-          "Overload courthouse circuit breakers to spark electrical fire",
-          "Destroy the concrete foundation locks with heavy drills",
-          "Scramble through the drainage ducts to street level",
-          "Leap onto returning extraction vehicle"
+          "Escape The Courthouse"
         ],
-        enemies: ["Leland Coyle", "Pouncer"],
-        tactics: "Drills overheat and require coolants (water buckets) located around the basement floor. Beware of flooded sewage areas!"
+        enemies: ["Leland Coyle"],
+        tactics: "Use Microwave Triggers and Trackers to locate and execute Scapegoats across three sections of the Courthouse while evading patrolling Ex-Pops and a Berserker. Once the final Scapegoat is executed to unlock the exit, bypass Leland Coyle's outside ambush to escape via the shuttle."
       },
       {
         name: "Destroy the Evidence",
         type: "MK-Challenge",
-        description: "Shred classified photographs and files of legal experiments.",
+        description: "You are decay, the ceaselessly grinding entropy that destroys fact and makes way for history. Use the acid to destroy the evidence, and we will let you out.",
         difficulty: 3,
         objectives: [
-          "Find files in judge's secret vault",
-          "Bring them to industrial paper shredders in office wing",
-          "Bypass locked desk drawers using keypins",
-          "Escape via the security staircase"
+          "Pour Acid to Dissolve the Body in the Courtroom"
         ],
-        enemies: ["Leland Coyle", "Big Grunt"],
-        tactics: "Desks may contain alarm triggers. If you pick the lock incorrectly, sirens will sound, attracting Leland Coyle with his stun baton instantly."
+        enemies: ["Leland Coyle"],
+        tactics: "Locate and transport acid buckets from marked areas to the Main Courtroom without spilling the contents or falling victim to Leland Coyle's patrolling route. Pour all the acid buckets into the bath to dissolve the dead Reagent, then navigate around the active Timed Gates to escape via the exit shuttle."
       },
       {
         name: "Tilt the Scales of Justice",
         type: "MK-Challenge",
-        description: "Add lead weights to bribe the justice scales and lock courthouse sectors open.",
-        difficulty: 4,
+        description: "You are the defense. The guilty cannot be allowed to face justice in opposition to Murkoff's profit and influence. Add physical evidence to the moneyed side to tilt the scales of justice, and we will let you out.",
+        difficulty: 3,
         objectives: [
-          "Locate heavy iron weights in the basement locker",
-          "Carry weights to scale terminals in different courtroom rooms",
-          "Evade the Judge's deadly axes on the high balconies",
-          "Enter shuttle to retreat"
+          "Present the Head to Lady Justice",
+          "Tilt the Scales of Justice"
         ],
-        enemies: ["Leland Coyle", "Berserker"],
-        tactics: "Carrying iron weights drains your stamina bar completely. Coordinate your moves and use lockers as a tactical stepping point to catch your breath."
+        enemies: ["Leland Coyle"],
+        tactics: "Decipher ninety-second blacklight puzzles in the marked wings to unlock evidence heads, carefully avoiding the patrolling Leland Coyle and silent sound-detector gates. Deposit all four heads onto Lady Justice's scales in the lobby to secure a 'Not Guilty' verdict and flee to the escape shuttle."
       },
       {
         name: "Fuel the Release",
         type: "MK-Challenge",
-        description: "Refuel the courthouse gas valves to initiate a chemical purging protocol.",
-        difficulty: 4,
+        description: "You are liberty, let nothing contain you. Law is only the word of man, and facts the mere happenstance of existence. Open all the doors that would contain you, and we will let you out.",
+        difficulty: 3,
         objectives: [
-          "Locate fuel canisters in courthouse basement gardens",
-          "Evade Night Hunter patrols who have infinite night vision inside the garden maze",
-          "Connect canisters to central furnace systems",
-          "Vent greenhouse gas to trigger the alarm escape"
+          "Reach the Exit"
         ],
-        enemies: ["Night Hunter", "Leland Coyle"],
-        tactics: "The garden maze is pitch black. Use Night Hunter's glowing eyes to track his movement. Keep your own NVG turned off if he is looking your way, as your visor glow can give you away."
+        enemies: ["Leland Coyle"],
+        tactics: "Transport gas cans to locate and reactivate sequential generators in the Main Courtroom, Courtyard, and Lobby to unlock the blocking rolling gates. Avoid Leland Coyle and patrolling Ex-Pops across alternating routes before opening the main entrance and escaping to the shuttle."
       },
       {
         name: "Sentence the Prosecuted",
         type: "MK-Challenge",
-        description: "Drown the mock witnesses in acid baths to purge their perjury.",
+        description: "You are the investigator, here to find the evidence that will confirm the political will of the judge. Spell out the story that confirms the guilt of the condemned, and we will let you out.",
+        difficulty: 2,
+        objectives: [
+          "Solve the Word",
+          "Sentence the Prosecuted"
+        ],
+        enemies: ["Leland Coyle"],
+        tactics: "Use a Decoder to locate projection symbols in the upper hallways to decipher the codes that spell out the condemning word on the courtroom screens. Once the code is input, press the button switch to drop the hanging Reagent into the meat grinder and escape via the exit shuttle while evading Leland Coyle and patrolling Ex-Pops."
+      },
+      {
+        name: "Bribe the Judges",
+        type: "MK-Challenge",
+        description: "TBA",
         difficulty: 5,
         objectives: [
-          "Push the witness cages along the rails to the chemical tank",
-          "Search for valve controls matching the color indicator",
-          "Open valve pipelines to flood the tank with toxic solutions",
-          "Deactivate security shutters in front of the exit doors",
-          "Flee to the extraction ship"
+          "TBA"
         ],
-        enemies: ["Leland Coyle", "Mother Gooseberry", "Night Hunter"],
-        tactics: "This is a very high intensity MK-challenge. Focus on equipping the Blind Rig or Stun Rig to temporarily stop the two Prime Assets trying to trap you near the levers."
-      }
+        enemies: ["Leland Coyle"],
+        tactics: "TBA"
+      },
     ]
   },
+
+  // TOY FACTORY
   {
     id: "toy_factory",
     name: "Toy Factory",
-    description: "Mother Gooseberry's workshop of nightmares. Where childhood toys are welded, laced with glass, and stuffed with sharp wires.",
+    description: "A machine erected in celebration of capitalism's steady march toward the cheap, unnecessary, and disposable. Celebrate childhood joy with impossible quotas, slave wages, and zero safety standards.",
     activities: [
       {
         name: "Pervert the Futterman",
         type: "Trial",
-        description: "Destroy Futterman's wholesome image. Replace clean toys with adult items and push them to the incinerator.",
-        difficulty: 4,
+        description: "You are the revelator, what you build exposes the perversion latent in every heart. We cannot allow hidden messages and innuendo to corrupt our children. Expose, humiliate, and destroy the deviant, and we will let you out.",
+        difficulty: 3,
         objectives: [
-          "Gain access to the central factory production deck",
-          "Locate non-conforming items inside blue and pink shipping crates",
-          "Place illicit toys on the conveyor belt to trigger manual override",
-          "Locate three terminal codes and type them in to start the grinders",
-          "Solve hydraulic valves puzzles in the sub-level to restore gas flow",
-          "Incinerate the giant Futterman mascot by pulling the final safety toggle",
-          "Escape through the loading docks to the Sleep Room shuttle"
+          "Infiltrate the Toy Factory",
+          "Reach the Production Line",
+          "Start the Production Line",
+          "Unlock the Security System",
+          "Find Wax Boxes in Storage",
+          "Complete all Production Steps",
+          "Reroute the Production Line",
+          "Burn the Sex Toy"
         ],
-        enemies: ["Mother Gooseberry", "Franco Barbi", "Pouncer", "Screamer"],
-        tactics: "Franco Barbi attacks with a shotgun! Run in zigzags and jump through vault doors to dodge his ranged shotgun pellets. Listen for his psychotic laugh."
+        enemies: ["Mother Gooseberry"],
+        tactics: "Acquire foreman keys and use conveyor belts to transport specific materials like wax boxes to the input machines, progressing the target through the production line while evading Mother Gooseberry. Once completed, reroute the line to the incinerator, restore gas pressure by turning basement valves, and operate the furnace pumps to destroy the target and unlock the exit shuttle."
       },
       {
         name: "Crush the Sex Toys",
         type: "MK-Challenge",
-        description: "Locate and obliterate inventory batches before shipment.",
+        description: "I cannot teach you. I can only offer fear and pain and perversion and rage. Let these show you a path to enlightenment. Crush and destroy the toys, and we will let you out.",
         difficulty: 3,
         objectives: [
-          "Gather batches from storage cages",
-          "Throw them into mechanical hydraulic presses",
-          "Hold levers to crush the shipments",
-          "Flee down elevator shaft"
+          "Crush the Sex Toy Boxes"
         ],
-        enemies: ["Franco Barbi", "Screamer"],
-        tactics: "Holding levers takes uninterrupted time. Make sure you use a smoke bomb or distract Franco before interacting with the hydraulic console."
+        enemies: ["Mother Gooseberry"],
+        tactics: "Activate faulty generators to power up blacklights and reveal hidden puzzle codes on the correct sex toy boxes, carefully avoiding explosive duplicates. Transport the matching boxes to the compactor using conveyor belts and escape via the shuttle while evading Mother Gooseberry and her Ex-Pop assistants."
       },
       {
         name: "Incinerate the Sex Toys",
         type: "MK-Challenge",
-        description: "Burn the contraband in high-temperature furnaces.",
-        difficulty: 3,
+        description: "You are the sunlight, that burns away exposed infection. Perversion thrives in the damp, dark places where secrets fester. Incinerate the sex dolls, and we will let you out.",
+        difficulty: 1,
         objectives: [
-          "Retrieve plastic products from locker systems",
-          "Load products into active boiler chambers",
-          "Re-route fire pipelines",
-          "Evacuate through safety door"
+          "Push the Carts into the Incinerator"
         ],
-        enemies: ["Mother Gooseberry", "Pouncer"],
-        tactics: "Boilers spark up causing minor fire damage if you stand too close. Watch the hot steam gauges to time your deposits safely."
+        enemies: ["Mother Gooseberry"],
+        tactics: "Locate and collect specific electronic keys from the signposted areas of the basement to unlock sequential gates blocking the production carts. Push the carts full of toys along the rail line while evading Mother Gooseberry and roaming Ex-Pops, then incinerate them to open the path to the escape shuttle."
       },
       {
         name: "Shutdown the Factory",
         type: "MK-Challenge",
-        description: "Disable the main power core supplying the conveyor assembly corridors.",
+        description: "Workers are capital itself, products bought and engaged to create more easily sellable products. We must control production. Shut down the factory, and we will let you out.",
         difficulty: 4,
         objectives: [
-          "Disconnect three coolant tanks in sub-level lines",
-          "Disable main generator lock with lockpins",
-          "Survive high-voltage static field sparks on the floor",
-          "Safely pull core handles and flee"
+          "Shutdown the Factory"
         ],
-        enemies: ["Franco Barbi", "Big Grunt"],
-        tactics: "Static spikes light up on the metal floor in cycles. Memorize the pattern or walk on wooden planks to avoid getting paralyzed and spotted!"
+        enemies: ["Mother Gooseberry"],
+        tactics: "Locate and tinker with labeled Electric Panels across all four sections of the factory to power and press the main device buttons, locking down corresponding production lines. Slip through the resulting lockouts using alternative pathways and shortcuts while evading Mother Gooseberry and avoiding alarm doors that deploy extra Ex-Pops before escaping through the shuttle."
       },
       {
         name: "Fumigate the Factory",
         type: "MK-Challenge",
-        description: "Sterilize the toxic assembly lines using specialized chlorine valves.",
+        description: "You are the happy accident, the unnoticed leak that invites invisible death, ushering out the workers whose lives linger beyond their productivity. Fumigate the factory, kill the employees, and we will let you out.",
         difficulty: 4,
         objectives: [
-          "Locate 4 chlorine capsules",
-          "Crank open duct systems to load chlorine",
-          "Activate exhaust fans to disperse gas safely away from your mask",
-          "Jump onto elevator"
+          "Spread gas throughout the factory",
+          "Regroup at the incinerator"
         ],
-        enemies: ["Mother Gooseberry", "Night Hunter"],
-        tactics: "Fumigation creates yellow smoke that damages your sanity and inflicts Psychosis. Keep antidote vials in your quickbar!"
+        enemies: ["Mother Gooseberry"],
+        tactics: "Trace color-coded pipes to release valve pressure across Sections A and B of the basement while evading Mother Gooseberry and patrolling Ex-Pops. Once all six valves are activated to flood the factory with gas, trigger the central gas chamber to execute the trapped Reagents and flee through the exit shuttle before suffocating."
       },
       {
         name: "Flatten the Foreman",
         type: "MK-Challenge",
-        description: "Eliminate the factory's tyrant manager by luring him under the hydraulic compactor.",
+        description: "Industrial production must not be hamstrung by the gremlins of workplace safety. A consumer's choice between value and virtue is no choice at all. Kill the foreman and slash production cost, and we will let you out.",
         difficulty: 5,
         objectives: [
-          "Sneak into the foreman's command balcony",
-          "Sabotage his remote console wires",
-          "Lure him down to the crushing floor sector",
-          "Hold the compactor button while he is trapped inside the zone",
-          "Execute the smash and escape through floor drains"
+          "Power Up the Compactor",
+          "Flatten the Foreman"
         ],
-        enemies: ["Mother Gooseberry", "Franco Barbi", "Big Grunt"],
-        tactics: "This requires incredible baiting. Let one player act as bait to run inside the crush zone while another stands at the button console on the catwalk level."
+        enemies: ["Mother Gooseberry"],
+        tactics: "Gather four keys hidden across signposted rooms in each factory section to unlock security locks and power up the compactor while using unstable microwave triggers to open blocked gates. Avoid Mother Gooseberry and act quickly, as the difficulty level and enemy density escalate over time, before activating the compactor to crush the foreman and rushing to the exit within 180 seconds."
       }
     ]
   },
+
+  // DOCKS
   {
     id: "docks",
     name: "Docks",
-    description: "A rusty harbor under high fog. Home to Franco Barbi's toxic operations and contraband logistics.",
+    description: "Crime and commerce comingle in the fetid waters under The Docks. Any imaginable vice is chum that draws up the sharks omnipresent beneath the calm surface of society. There's money to be made on the frontiers of what's legal.",
     activities: [
       {
         name: "Poison the Medicine",
@@ -602,6 +594,8 @@ export const MAPS_DATA = [
       }
     ]
   },
+
+  // DOWNTOWN
   {
     id: "downtown",
     name: "Downtown",
@@ -667,6 +661,8 @@ export const MAPS_DATA = [
       }
     ]
   },
+
+  // SUBURBS
   {
     id: "suburbs",
     name: "Suburbs",
@@ -729,6 +725,8 @@ export const MAPS_DATA = [
       }
     ]
   },
+
+  // SHOPPING MALL
   {
     id: "shopping_mall",
     name: "Shopping Mall",
@@ -780,6 +778,8 @@ export const MAPS_DATA = [
       }
     ]
   },
+
+  // RESORT
   {
     id: "resort",
     name: "Resort",
@@ -831,6 +831,8 @@ export const MAPS_DATA = [
       }
     ]
   },
+
+  // TELEVISION STUDIO
   {
     id: "television_studio",
     name: "Television Studio",
@@ -852,24 +854,44 @@ export const MAPS_DATA = [
         ],
         enemies: ["Franco Barbi", "Leland Coyle", "Mother Gooseberry", "Night Hunter"],
         tactics: "This is a full scale Trial where all three Prime Assets may cross paths! Conserve battery, coordinate laser alignment quickly, and keep communication clear."
+      },
+      {
+        name: "Cancel the Broadcast",
+        type: "MK-Challenge",
+        description: "TBA",
+        difficulty: 4,
+        objectives: [
+          "TBA"
+        ],
+        enemies: ["Big Grunt", "Mother Gooseberry", "Screamer"],
+        tactics: "TBA"
       }
     ]
   },
+
+  // PRISON FARM
   {
-    id: "new_map",
-    name: "Unnamed New Map",
-    description: "",
+    id: "prison_farm",
+    name: "Prison Farm",
+    description: "TBA",
     activities: [
       {
-        name: "TBA",
+        name: "Locksock the Warden",
         type: "Trial",
-        description: "",
-        difficulty: 5,
+        description: "You are freedom. The indefinable promise that keeps prisoners at the grindstone that turns authority to profit and back again. Don't let false authority stand in the way of real capital. Kill the Warden, and we will let you out.",
+        difficulty: 3,
         objectives: [
-          ""
+          "Infiltrate the Prison",
+          "Find the Warden",
+          "Enter the Panopticon",
+          "Incite a Riot (Redirect Steam Flow in Block A)",
+          "Incite a Riot (Destroy Food Source in Block B)",
+          "Open the Panopticon Cells",
+          "Get to the Warden's Office",
+          "Locksock the Warden"
         ],
         enemies: ["Leland Coyle"],
-        tactics: ""
+        tactics: "TBA"
       }
     ]
   },
@@ -952,10 +974,20 @@ export const ENEMIES_DATA = {
   },
   "Otto and Arora Kress": {
     name: "Otto and Arora Kress",
-    alias: "The Kid / Il Bambino",
-    weapon: "Lupara Shotgun (Fires toxic pellets)",
-    description: "A mafia heir who behaves like an oversized, psychotic toddler. He is the first ranged Prime Asset in the trials. He fires a miniature lupara shotgun loaded with laced pellets.",
-    tactics: "Franco is a ranged menace. Run in sudden zigzags when you hear him fire. Crouch behind solid masonry or file cabinets. You can hide inside lockboxes or closets to wait for him to reload."
+    alias: "Kress Twins / The Buffalo Minotaur",
+    weapon: "Handheld circular saw (Otto), Flasks of poison (Arora)",
+    description: `Born in 1899, Otto and Arora Kress were conceived as the firstborn children to Anton Kress, the wealthy patriarch of the Kress Family estate and founder of successful industrial company Kress Chemical; and a mother who died giving birth to the two siblings. During their mother's pregnancy, Anton frequently brought his work home and negligently exposed her to toxic chemicals, which in turn lead to utero exposure to chemicals in the womb. As a bizarre side effect of the chemical contamination, Otto and Arora were horrifically conjoined at birth.
+    
+                  During their childhood, they each developed and nurtured their own talents: Otto focuses on politics, while Arora focuses on chemistry. Together, the twins used their skills and positions in Kress Chemical to earn a significant amount of influence in Buffalo, New York. This included empowering fellow politicians from behind the scenes to manipulate water pollution regulations and improving Kress Chemical's failing business developments that had occurred as a result of Anton Kress' descent into alcoholism.
+    
+                  Despite their success, Otto and Arora engaged in increasingly depraved activities. Beginning in the 1920s, Otto and Arora Kress both participated in a series of murders in Buffalo, New York, seemingly as a result of their degraded mental state in response to societal rejection because of their mutual disfigurement. These murders significantly escalated by the 1940s, with many of the siblings' victims reported to be vagrants, prostitutes and Canadian locals. The serial killings would earn the two the pseudonym "The Buffalo Minotaur" by the press. Further investigations the Kress siblings' violent activities revealed that the two had used the Kress family estate as a burial ground for their numerous victims. Additionally, Otto and Arora have engaged in a lengthy incestuous relationship.
+
+                  In 1924, Anton Kress realized the depths of the Twins' depravity and attempted to separate Otto and Arora using a hand saw. However, he was unsuccessful and was sawn in half by the twins, who both proceeded to slowly torture their father to death by sewing him together with both halves upside-down and forcibly kept him alive for weeks before disposing of him.
+
+                  With their involvement in politics and the chemical industry, Otto and Arora managed to design New York politics from behind the scenes for years to come and secured employment for many workers within Kress Chemical. However, Otto and Arora's crimes would catch up to them once Otto Kress' ambitions to become elected as a US Governor convinced him to step out of the limelight and into the public eye. Around 1958, they were arrested after police arrived at their home and found them covered in blood. However, the Buffalo Minotaur's activities had additionally caught the attention of Clyde Perry, who began investigating the so-called Buffalo Minotaur in 1957 following an apparent business partnership between the Murkoff Corporation and Kress Chemical. Perry believed the case could be of substantial interest to the Sinyala Facility's work.
+                  
+                  Shortly after their imprisonment, Otto and Arora were acquired by Perry in their cell, and the Buffalo Minotaur Murders were swiftly covered up and blamed on the Kress Estate's groundskeeper to protect Kress Chemical's business interests.[5] The Kress Twins were inducted into the Murkoff Corporation as members of the Chemical Research & Development division, with Arora even learning to speak fluent Japanese solely to communicate with Doctor Jun Kusamura, a Consulting Chemical Engineer and former Unit 731 scientist. One day, Kusamura visits their laboratory to deliver two pieces of news; the first is about Clyde Perry's death. When Otto asked Arora about the second news, Kusamura knocked them unconscious with chemical gas while they were not looking and claimed they would know once they woke up. Otto and Arora were then forcibly inducted as Prime Assets for Project Lathe.`,
+    tactics: ""
   },
   "Liliya Bogomolova": {
     name: "Liliya Bogomolova",

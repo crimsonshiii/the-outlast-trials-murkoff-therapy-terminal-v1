@@ -19,7 +19,7 @@ const isMainTrial = (name) => {
     n === "kill the politiician" ||
     n === "despoil the auction" ||
     n === "silence the idol" ||
-    n === "tba"
+    n === "locksock the warden"
   );
 };
 
