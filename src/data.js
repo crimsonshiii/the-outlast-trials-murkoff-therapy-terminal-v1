@@ -896,6 +896,24 @@ export const MAPS_DATA = [
     ]
   },
   {
+    id: "unnamed_map",
+    name: "S8 Map",
+    description: "TBA",
+    activities: [
+      {
+        name: "TBA",
+        type: "Trial",
+        description: "TBA",
+        difficulty: 3,
+        objectives: [
+          ""
+        ],
+        enemies: ["Leland Coyle"],
+        tactics: "TBA"
+      }
+    ]
+  },
+  {
     id: "waste_tunnel",
     name: "Waste Tunnel",
     description: "The sub-surface sewer networks of the facility. Extremely narrow dark tunnels littered with toxic chemicals and high humidity.",
@@ -929,7 +947,7 @@ export const MAPS_DATA = [
         tactics: "This is a timed challenge with a constant health/sanity degeneration. Always verify your current gas filter state and prioritize speed over thorough exploration."
       }
     ]
-  }
+  },
 ];
 
 export const ENEMIES_DATA = {

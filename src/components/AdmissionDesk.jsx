@@ -146,7 +146,7 @@ export default function AdmissionDesk({
                 Murkoff Admission Desk
               </Typography>
               <Typography variant="caption" sx={{ opacity: 0.6, fontSize: "0.7rem", display: "block" }}>
-                SYSTEM_MAINFRAME_INGRESS_GATE // REAGENT PROFILE INTAKE V1.0.0
+                SYSTEM_MAINFRAME_INGRESS_GATE // REAGENT PROFILE INTAKE V1.0.1
               </Typography>
             </Box>
           </Box>
