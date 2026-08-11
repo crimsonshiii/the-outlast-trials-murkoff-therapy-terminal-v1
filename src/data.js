@@ -891,7 +891,7 @@ export const MAPS_DATA = [
           "Locksock the Warden"
         ],
         enemies: ["Leland Coyle"],
-        tactics: "TBA"
+        tactics: "Craft contraband tools like detonators and levers at workbenches to navigate blocked routes and incite an inmate riot by redirecting Block A steam valves and destroying Block B food supplies while evading Leland Coyle and Biters. Decipher blacklight cell codes to unlock the Warden's Office, brutally bludgeon the restrained Warden to death with locksocks, and race back through the rioting prison to the extraction shuttle before the three-minute timer expires."
       }
     ]
   },
