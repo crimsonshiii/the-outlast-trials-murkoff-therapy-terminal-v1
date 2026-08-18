@@ -142,7 +142,7 @@ export default function Header({
                   Murkoff Therapy Terminal
                 </Typography>
                 <Typography variant="caption" sx={{ opacity: 0.6, fontSize: "0.65rem", display: "block" }}>
-                  SUB-SURFACE EVALUATION ARCHIVE // DR. EASTERMAN EVAL-V1.0.1
+                  SUB-SURFACE EVALUATION ARCHIVE // DR. EASTERMAN EVAL-V1.0.2
                 </Typography>
               </Box>
             </Box>
