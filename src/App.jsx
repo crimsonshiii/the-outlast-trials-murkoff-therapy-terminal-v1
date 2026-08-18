@@ -693,10 +693,9 @@ function ClinicalDashboard({
         audioEnabled={audioEnabled}
         setAudioEnabled={setAudioEnabled}
         toggleNightVision={toggleNightVision}
-        anchorEl={anchorEl}
         selectedMapId={selectedMapId}
-        handleOpenMenu={handleOpenMenu}
-        handleCloseMenu={handleCloseMenu}
+        selectedActivity={selectedActivity}
+        handleSelectActivity={handleSelectActivity}
         handleMenuClick={handleMenuClick}
       />
 
