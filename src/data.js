@@ -478,7 +478,7 @@ export const MAPS_DATA = [
         name: "Shutdown the Factory",
         type: "MK-Challenge",
         description: "Workers are capital itself, products bought and engaged to create more easily sellable products. We must control production. Shut down the factory, and we will let you out.",
-        difficulty: 4,
+        difficulty: 2,
         objectives: [
           "Shutdown the Factory"
         ],
@@ -489,7 +489,7 @@ export const MAPS_DATA = [
         name: "Fumigate the Factory",
         type: "MK-Challenge",
         description: "You are the happy accident, the unnoticed leak that invites invisible death, ushering out the workers whose lives linger beyond their productivity. Fumigate the factory, kill the employees, and we will let you out.",
-        difficulty: 4,
+        difficulty: 3,
         objectives: [
           "Spread gas throughout the factory",
           "Regroup at the incinerator"
@@ -501,7 +501,7 @@ export const MAPS_DATA = [
         name: "Flatten the Foreman",
         type: "MK-Challenge",
         description: "Industrial production must not be hamstrung by the gremlins of workplace safety. A consumer's choice between value and virtue is no choice at all. Kill the foreman and slash production cost, and we will let you out.",
-        difficulty: 5,
+        difficulty: 3,
         objectives: [
           "Power Up the Compactor",
           "Flatten the Foreman"
